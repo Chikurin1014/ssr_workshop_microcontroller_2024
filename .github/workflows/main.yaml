@@ -17,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Check Clang Format
-        uses: DoozyX/clang-format-action@v0.17
+        uses: DoozyX/clang-format-lint-action@v0.17
         with:
           source: './example/**'
           inplace: True
