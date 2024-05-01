@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-bool is_prime(int x) {
+bool isPrime(int x) {
     // なにかを書く
     // sqrt(x) ... √xの値を返す
 }
@@ -14,7 +14,7 @@ void setup() {
 void loop() {
     // 100までの素数を順番に表示
     for (int i = 1; i < 101; i++) {
-        if (is_prime(i)) {
+        if (isPrime(i)) {
             Serial.println(i);
         }
         delay(1000);
