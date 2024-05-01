@@ -5,19 +5,19 @@ struct DigitalOut {
     int state;
 
     void setup() {
-        // 最初に一回だけ行う処理
+        /* 最初に一回だけ行う処理 */
         /* ここを埋める */
     }
     void setHigh() {
-        // ピン出力をHIGHにする
+        /* ピン出力をHIGHにする */
         /* ここを埋める */
     }
     void setLow() {
-        // ピン出力をLOWにする
+        /* ピン出力をLOWにする */
         /* ここを埋める */
     }
     void toggle() {
-        // ピン出力のHIGH/LOWを切り替える
+        /* ピン出力のHIGH/LOWを切り替える */
         /* ここを埋める */
     }
 };

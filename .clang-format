@@ -7,13 +7,15 @@ AlignTrailingComments: true
 AlwaysBreakAfterDefinitionReturnType: None
 AlwaysBreakAfterReturnType: None
 AlwaysBreakTemplateDeclarations: Yes
+AllowShortBlocksOnASingleLine: Empty
+AllowShortFunctionsOnASingleLine: Empty
 BreakBeforeBraces: Custom
 BraceWrapping:
   AfterControlStatement: Never
   BeforeCatch: true
   BeforeElse: true
   BeforeWhile: true
-ColumnLimit: 120
+ColumnLimit: 0
 Cpp11BracedListStyle: true
 IncludeBlocks: Regroup
 IndentWidth: 4
