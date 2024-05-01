@@ -1,0 +1,22 @@
+- name: Main CI
+  on:
+    push:
+      branches:
+        - main
+        - use_gha
+    pull_request:
+      branches:
+        - main
+    workflow_dispatch:
+
+  jobs:
+    clang-format:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+        - name: Check Clang Format
+          uses: DoozyX/clang-format-action@v0.17
+          with:
+            source: './example/**'
+            inplace: True
