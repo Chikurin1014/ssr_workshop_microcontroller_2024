@@ -1,0 +1,21 @@
+Language: Cpp
+BasedOnStyle: Mozilla
+Standard: Auto
+
+AlignOperands: Align
+AlignTrailingComments: true
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+AlwaysBreakTemplateDeclarations: Yes
+BreakBeforeBraces: Attach
+BreakConstructorInitializers: AfterColon
+BreakInheritanceList: AfterComma
+ColumnLimit: 120
+Cpp11BracedListStyle: true
+IncludeBlocks: Regroup
+IndentWidth: 4
+PointerAlignment: Left
+ReferenceAlignment: Pointer
+SortIncludes: CaseSensitive
+SortUsingDeclarations: true
+SpacesBeforeTrailingComments: 1
