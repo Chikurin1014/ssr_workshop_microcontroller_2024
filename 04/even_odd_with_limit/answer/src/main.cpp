@@ -1,0 +1,22 @@
+#include <Arduino.h>
+
+int count;
+
+// 最初に一回だけ実行される
+void setup() {
+    Serial.begin(9600);
+}
+
+// 繰り返し実行される
+void loop() {
+    count = 0;            // countに0を代入
+    while (count <= 10) { // countが10以下の間繰り返す
+        if (count % 2 == 0) {
+            Serial.printf("%d is an even number\n", count);
+        } else {
+            Serial.printf("%d is an odd number\n", count);
+        }
+        count = count + 1; // countにcount + 1を代入
+        delay(1000);       // 1000ミリ秒(=1秒)待つ
+    }
+}
