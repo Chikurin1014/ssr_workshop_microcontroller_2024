@@ -13,7 +13,8 @@ void loop() {
     while (count <= 10) { // countが10以下の間繰り返す
         if (count % 2 == 0) {
             Serial.printf("%d is an even number\n", count);
-        } else {
+        }
+        else {
             Serial.printf("%d is an odd number\n", count);
         }
         count = count + 1; // countにcount + 1を代入

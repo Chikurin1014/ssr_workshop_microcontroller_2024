@@ -7,7 +7,12 @@ AlignTrailingComments: true
 AlwaysBreakAfterDefinitionReturnType: None
 AlwaysBreakAfterReturnType: None
 AlwaysBreakTemplateDeclarations: Yes
-BreakBeforeBraces: Attach
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterControlStatement: Never
+  BeforeCatch: true
+  BeforeElse: true
+  BeforeWhile: true
 BreakConstructorInitializers: AfterColon
 BreakInheritanceList: AfterComma
 ColumnLimit: 120
