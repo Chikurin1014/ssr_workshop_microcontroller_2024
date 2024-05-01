@@ -10,6 +10,10 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   clang-format:
     runs-on: ubuntu-latest
