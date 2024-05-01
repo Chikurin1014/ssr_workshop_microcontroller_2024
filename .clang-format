@@ -13,8 +13,6 @@ BraceWrapping:
   BeforeCatch: true
   BeforeElse: true
   BeforeWhile: true
-BreakConstructorInitializers: AfterColon
-BreakInheritanceList: AfterComma
 ColumnLimit: 120
 Cpp11BracedListStyle: true
 IncludeBlocks: Regroup
