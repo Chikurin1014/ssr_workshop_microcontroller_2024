@@ -19,5 +19,5 @@ jobs:
       - name: Check Clang Format
         uses: DoozyX/clang-format-lint-action@v0.17
         with:
-          source: './example/**'
+          source: './example/*'
           inplace: True
