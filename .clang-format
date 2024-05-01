@@ -9,18 +9,27 @@ AlwaysBreakAfterReturnType: None
 AlwaysBreakTemplateDeclarations: Yes
 AllowShortBlocksOnASingleLine: Empty
 AllowShortFunctionsOnASingleLine: Empty
-BreakBeforeBraces: Custom
-BraceWrapping:
-  AfterControlStatement: Never
-  BeforeCatch: true
-  BeforeElse: true
-  BeforeWhile: true
 ColumnLimit: 0
 Cpp11BracedListStyle: true
-IncludeBlocks: Regroup
 IndentWidth: 4
 PointerAlignment: Left
 ReferenceAlignment: Pointer
 SortIncludes: CaseSensitive
 SortUsingDeclarations: true
 SpacesBeforeTrailingComments: 1
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterControlStatement: Never
+  BeforeCatch: true
+  BeforeElse: true
+  BeforeWhile: true
+
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '<*>'
+    Priority: 1
+  - Regex: '<.*>'
+    Priority: 2
+  - Regex: '"*"'
+    Priority: 3
