@@ -1,0 +1,35 @@
+name: Main CI
+
+on:
+  push:
+    branches:
+      - main
+      - use_gha
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  clang-format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Format
+        uses: DoozyX/clang-format-lint-action@v0.17
+        with:
+          source: '.'
+          inplace: True
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: GitHub Actions
+          message: 'format by clang-format'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
