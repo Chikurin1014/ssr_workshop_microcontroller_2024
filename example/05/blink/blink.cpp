@@ -7,8 +7,8 @@ void setup() {
 }
 
 void loop() {
-    digitalWrite(ledPin, HIGH);
+    digitalWrite(ledPin, HIGH);  // ledPinの電圧をHIGH(3.3V)にする
     delay(1000);
-    digitalWrite(ledPin, LOW);
+    digitalWrite(ledPin, LOW);   // ledPinの電圧をLOW(0.0V)にする
     delay(1000);
 }
