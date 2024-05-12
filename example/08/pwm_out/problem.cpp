@@ -1,25 +1,27 @@
 #include <Arduino.h>
 
 struct PwmOut {
+    // メンバ変数
     int pinNum;
     int chNum;
     int periodUs;
     int dutyInt;
 
+    // メンバ関数
+    // 最初に一回だけ行う処理をまとめた関数
     void setup() {
-        /* 最初に一回だけ行う処理 */
         /* ここを埋める */
     }
+    // 現在のピン出力(duty比, 0.0~1.0)を返す関数
     float getDuty() {
-        /* 現在のピン出力(duty比, 0.0~1.0)を返す */
         /* ここを埋める */
     }
+    // ピン出力(duty比, 0.0~1.0)をdutyにする関数
     void setDuty(float duty) {
-        /* ピン出力(duty比, 0.0~1.0)をdutyにする */
         /* ここを埋める */
     }
+    // ピン出力(duty比, 0.0~1.0)を0にする関数
     void setToZero() {
-        /* ピン出力(duty比, 0.0~1.0)を0にする */
         /* ここを埋める */
     }
 };
