@@ -2,12 +2,12 @@
 #include <ESP32Servo.h>
 
 Servo servo1;
-const int servo1Pin = 2;
+const int servo1Pin = 15;
 
 const int minUs = 500;
 const int maxUs = 2400;
 
-const int potentioPin1 = 12;
+const int potentioPin1 = 4;
 
 int pos = 0;
 
