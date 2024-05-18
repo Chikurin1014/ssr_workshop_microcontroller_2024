@@ -6,7 +6,6 @@ void setup() {
     pinMode(ledPin, OUTPUT); // ledPinを出力ピンに設定
 }
 
-
 void loop() {
     digitalWrite(ledPin, HIGH); // ledPinの電圧をHIGH(3.3V)にする
     delay(1000);
